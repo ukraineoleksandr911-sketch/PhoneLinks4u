@@ -1,0 +1,42 @@
+/* Design tokens. Generated from the client config (theme block). */
+
+@font-face { font-family: "Inter"; font-weight: 100 900; font-style: normal; font-display: swap; src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 200 800; font-style: normal; font-display: swap; src: url("../fonts/manrope-latin-wght-normal.woff2") format("woff2"); }
+
+:root {
+  color-scheme: light;
+  --c-bg: #FFFFFF;
+  --c-alt: #F5F7FA;
+  --c-text: #111827;
+  --c-muted: #6B7280;
+  --c-border: #E5E7EB;
+  --c-dark: #0F172A;
+  --c-dark2: #1E293B;
+  --c-accent: #2563EB;
+  --c-accent-hover: #1D4ED8;
+  --c-accent-soft: #EAF1FF;
+  --c-success: #16A34A;
+  --c-success-text: #15803D;
+  --c-warning: #F59E0B;
+  --c-error: #DC2626;
+  --warning-rgb: 245 158 11;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --shadow: 0 8px 24px rgb(15 23 42 / .08);
+  --shadow-lg: 0 16px 40px rgb(15 23 42 / .12);
+
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Manrope", "Inter", system-ui, sans-serif;
+
+  --fs-h1: clamp(2rem, 1.2rem + 3.4vw, 3.5rem);
+  --fs-h2: clamp(1.625rem, 1.3rem + 1.1vw, 2.5rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + .5vw, 1.625rem);
+  --fs-body: clamp(1rem, .96rem + .12vw, 1.125rem);
+  --fs-small: .875rem;
+
+  --gutter: 16px;
+  --container: 1240px;
+}
+@media (min-width: 768px) { :root { --gutter: 24px; } }
