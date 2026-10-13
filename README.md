@@ -10,6 +10,7 @@ index.html                 Головна: 9 блоків з розділу 7 Т
 repair/ accessories/ services/ warranty/ contact/   Сторінки меню (index.html у кожній)
 assets/css/tokens.css      Кольори, шрифти, відступи (генерується з конфігу)
 assets/css/base.css        Компоненти й розкладка
+assets/img/                Фото (Unsplash, вільна ліцензія; автори в assets/img/CREDITS.md)
 assets/js/config.js        Години роботи, марки, моделі й ціни калькулятора
 assets/js/site.js          Меню, випадні списки, статус Open/Closed, каруселі
 assets/js/calc.js          Калькулятор ремонту, фільтр аксесуарів, форма запису

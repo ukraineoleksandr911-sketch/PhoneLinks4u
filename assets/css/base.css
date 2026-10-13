@@ -368,3 +368,21 @@ p { max-width: 64ch; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Photos (Unsplash, see assets/img/CREDITS.md) */
+.product .thumb { overflow: hidden; background: #F1F5F9; }
+.product .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease; }
+.product:hover .thumb img { transform: scale(1.04); }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% center; opacity: .28; pointer-events: none; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--c-dark) 0%, rgb(15 23 42 / .55) 55%, rgb(15 23 42 / .85) 100%); pointer-events: none; }
+.hero > .container { position: relative; z-index: 1; }
+.brand-card { overflow: hidden; }
+.brand-img { display: block; width: calc(100% + 48px); max-width: none; margin: -24px -24px 16px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.page-hero-grid { display: grid; gap: 8px 40px; align-items: center; }
+.page-hero-img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--r-lg); box-shadow: var(--shadow); }
+@media (min-width: 900px) { .page-hero-grid { grid-template-columns: 1.2fr .8fr; } .page-hero-grid > nav { grid-column: 1 / -1; } .page-hero-grid > h1, .page-hero-grid > p { grid-column: 1; } .page-hero-grid > h1 { align-self: end; } .page-hero-grid > p { align-self: start; } .page-hero-img { grid-column: 2; grid-row: 2 / span 2; max-height: 280px; } }
+
+/* Repair and service card photos */
+.repair-card.has-img { overflow: hidden; padding-top: 0; }
+.repair-card .card-img { display: block; width: calc(100% + 48px); max-width: none; height: auto; margin: 0 -24px; aspect-ratio: 16 / 9; object-fit: cover; }
+.repair-card.has-img .ico { margin-top: -36px; position: relative; border: 3px solid #fff; box-sizing: content-box; box-shadow: var(--shadow); background: var(--c-accent-soft); }
